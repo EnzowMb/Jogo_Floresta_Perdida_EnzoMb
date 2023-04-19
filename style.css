@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+canvas {
+    width: 100%;
+    height: 100%;
+    border: solid;
+    display: inline;
+    position: relative;
+}
+
+#instrucoes {
+    display: grid;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    color: black;
+    display: block;
+    position: fixed;
+    bottom: auto;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Mensagem de Vitoria :) */
+
+#victory {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    background-image: url("Imagens/victory.gif");
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 1;
+    text-align: center;
+}
+
+#victory #message {
+    font-size: 2vw;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+/* */
+
+/* Menu */
+
+#menu {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    visibility: visible;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+    background-image: url("Imagens/Menu.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+}
+
+#menu #message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+#menu #message h1 {
+    display: inline;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: 5.5vw;
+}
+
+#menu #message p {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+
+/* */
+
+/* Mensagem de derrota :< */
+
+#gameOver {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+    background-image: url("Imagens/gameOver.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+#gameOver #message {
+    font-size: 2vw;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+/* */
+
+/* Botão Play */
+
+#play {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    padding: 8px 14px;
+    border-radius: 25px;
+    color: #fff;
+    background: tomato;
+    box-shadow: 2px 2px 1px 1px #000;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#play:hover {
+    box-shadow: none;
+    color: bisque;
+    transform: scale(1.1);
+}
+
+/* */
+
+/* Botão Vitoria :) */
+
+#backMenuBtn {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    padding: 8px 14px;
+    border-radius: 25px;
+    color: #fff;
+    background: tomato;
+    box-shadow: 2px 2px 1px 1px #000;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#backMenuBtn:hover {
+    box-shadow: none;
+    color: bisque;
+    transform: scale(1.1);
+}
+
+/* */
+
+/* Botão Game Over :< */
+
+#restartBtn {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    padding: 8px 14px;
+    border-radius: 25px;
+    color: #fff;
+    background: tomato;
+    box-shadow: 2px 2px 1px 1px #000;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#restartBtn:hover {
+    box-shadow: none;
+    color: bisque;
+    transform: scale(1.1);
+}
+
+/* */
+
+/* Cronometro */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+
+#timer {
+    display: flex;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    min-width: 30px;
+}
+
+.separator {
+    padding: 0 10px; /* Apenas as laterais*/
+}
+
+#miliseconds {
+    font-size: 1.2vw;
+}
+
+/* */
+
+@media (max-width: 1300px) and (min-width: 500px) {
+    
+    #setas {
+        visibility: hidden;
+    }
+
+    /* Mensagem de derrota :< */
+
+    #gameOver {
+        background-position: left;
+        background-size: 30vw;
+    }
+
+    /* */
+
+    /* Mensagem de Vitoria :) */
+
+    #victory {
+        background-position: left;
+        background-size: 30vw;
+    }
+
+    /* */
+
+    /* Cronometro */
+    
+    #timer {
+        font-size: 2.5vw;
+    }
+
+    .time {
+        margin-right: 0.5vw;
+    }
+
+    .separator {
+        padding: 0 0.5vw; /* Apenas as laterais*/
+    }
+
+    /* */
+
+}
+
+@media (max-width: 500px) {
+
+    /* Menu */
+    #menu #message {
+        top: 43%;
+    }
+
+    #menu #message h1 {
+        font-size: 5vh;
+    }
+
+    #menu #message p {
+        font-size: 5vw;
+    }
+
+    /* */
+
+    /* Botão Play */
+
+    #play {
+        font-size: 7vw;
+    }
+
+    /* */
+
+    /* Mensagem de Vitoria :) */
+
+    #victory {
+        background-size: 300px;
+        background-position: bottom;
+    }
+
+    #victory #message {
+        font-size: 4vw;
+        top: 21%;
+    }
+
+    /* */
+
+    /* Botão Vitoria :) */
+
+    #backMenuBtn {
+        font-size: 3.5vw;
+    }
+
+    /* */
+
+    /* Mensagem de derrota :< */
+
+    #gameOver {
+        background-position: bottom;
+        background-size: 270px;
+    }
+
+    #gameOver #message {
+        font-size: 4vw;
+        top: 25%;
+    }
+
+    /* */
+
+    /* Botão Game Over :< */
+
+    #restartBtn {
+        font-size: 4vw;
+    }
+
+    /* */
+
+    /* Cronometro */
+
+    .separator {
+        padding: 0 2px; /* Apenas as laterais*/
+    }
+
+    .container {
+        padding-top: 0.5rem;
+    }
+
+    #timer {
+        font-size: 4vw;
+    }
+
+    #miliseconds {
+        font-size: 2.5vw;
+    }
+
+    /* */
+}

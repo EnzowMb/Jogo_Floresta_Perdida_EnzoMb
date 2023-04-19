@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Woods</title>
+
+    <link rel="icon" href="Imagens/icon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/script.js" defer></script>
+    
+</head>
+<body>
+    
+    <!-- Mensagem de Vitoria -->
+    <audio id="victory-music" src="Musica/Victory.wav"></audio>
+    <div id="victory">
+        <div id="message">
+            <h1>Parabens!!</h1>
+            <p>Você conseguiu</p>
+            <div id="Tempo"></div>
+            <br>
+            <input id="backMenuBtn" type="button" onclick="window.location.reload()" value="Voltar para o Menu" />
+        </div>
+
+    </div>
+
+    <!-- Menu -->
+    <audio id="menu-music" src="Musica/Menu music.mp3"></audio>
+    <div id="menu">
+        <div id="message">
+            <h1>Floresta Perdida</h1>
+            <p>Lost Woods</p>
+            <input id="play" type="button" value="Iniciar" />
+        </div>
+    </div>
+
+    <!-- Mensagem de Derrota -->
+    <audio id="gameOver-music" src="Musica/GameOver.wav"></audio>
+    <div id="gameOver">
+        <div id="message">
+            <h1>Game Over :(</h1>
+            <p>Você encostou nos espinhos!!</p>
+            <input id="restartBtn" type="button" onclick="window.location.reload()" value="Tentar novamente!" />
+        </div>
+    </div>
+
+    <!-- Jogo rodando em canvas -->
+    <audio id="main-music" src="Musica/Main music.mp3"></audio>
+    <canvas class="game"></canvas>
+
+    <!-- Timer -->
+    <div class="container">
+        <div id="timer">
+            <div class="time" id="minutes">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="seconds">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="miliseconds">000</div>
+        </div>
+    </div>
+
+    <div id="instrucoes">
+
+        <div id="setas">
+            <p><img src="Imagens/Cima.png" alt="Botão do teclado da seta para cima" height="50px" align="center">Aperte a seta para cima do teclado para andar para cima</p>
+        </div>
+        <div id="setas">
+            <p><img src="Imagens/Direita.png" alt="Botão do teclado da seta para direita" height="50px" align="center">Aperte a seta para cima do teclado para andar para direita</p>
+        </div>
+        <div id="setas">
+            <p><img src="Imagens/Baixo.png" alt="Botão do teclado da seta para baixo" height="50px" align="center">Aperte a seta para cima do teclado para andar para baixo</p>
+        </div>
+        <div id="setas">
+            <p><img src="Imagens/Esquerda.png" alt="Botão do teclado da seta para esquerda" height="50px" align="center">Aperte a seta para cima do teclado para andar para esquerda</p>
+        </div>
+
+    </div>
+ 
+</body>
+</html>
