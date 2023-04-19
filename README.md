@@ -10,5 +10,6 @@ Matricula: AQ3007286
 Um jogo feito em Javascritp, HTML e CSS
 <br>
 <br>
+<img src="https://i.gifer.com/origin/63/63396d44a7a2d41e25b5699227529929.gif" alt="GIF">
 Detalhes do jogo:
-![image](https://user-images.githubusercontent.com/89809584/232945793-420be0ce-4436-4bbb-b1e9-71a654613c65.png)
+
