@@ -6,8 +6,12 @@ Nome: Enzo Martinelli Brunozi
 <br>
 Matricula: AQ3007286
 <br>
+<br>
 <h1>Jogo Floresta Perdida</h1>
 Um jogo feito em Javascritp, HTML e CSS
+<br>
+<br>
+<a href="https://enzowmb.github.io/Jogo_Floresta_Perdida_EnzoMb/">Clique aqui para jogar!!</a>
 <br>
 <br>
 <sup>Jogo inspirado em Zelda: Minish Cap de GameBoy</sup>
