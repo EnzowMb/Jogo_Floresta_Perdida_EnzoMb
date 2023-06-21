@@ -54,3 +54,15 @@ Eles ouviram dizer que há uma lenda de uma espada perdida em um bosque estranho
 O mapa de todos os labirintos está disponível aqui: 
 [Labirintos.xlsx](https://github.com/EnzowMb/Jogo_Floresta_Perdida_EnzoMb/files/11274101/Labirintos.xlsx)
 <br>(Tambem está disponível no arquivo .zip)</sup>
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Titulo do meu projeto**
+| :label: Tecnologias | java, html, ruby, c# (tecnologias utilizadas)
+| :rocket: URL         | https://url-deploy.com.br
+| :fire: Desafio     | https://url-do-desafio.com.br
+
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![image](https://github.com/EnzowMb/Jogo_Floresta_Perdida_EnzoMb/assets/89809584/ec4dd5ce-113d-4629-8e2d-c4000fda2698#vitrinedev)
+
+
