@@ -6,8 +6,8 @@ Nome: Enzo Martinelli Brunozi
 <br>
 Matricula: AQ3007286
 <br>
-<br>
-<h1>Jogo Floresta Perdida</h1>
+<hr>
+<h1 align="center">Jogo Floresta Perdida</h1>
 Um jogo feito em Javascritp, HTML e CSS
 <br>
 <br>
