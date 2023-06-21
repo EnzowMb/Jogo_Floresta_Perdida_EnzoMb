@@ -21,7 +21,10 @@ Um jogo feito em Javascritp, HTML e CSS
 <h2>Detalhes do jogo:</h2>
 Neste jogo você controla o heroi com as setas do teclado pelo labirinto até encontrar a espada, o qual é o nosso objetivo!
 <br>
-<img src="https://thumbs.gfycat.com/PettyInexperiencedGermanshepherd-max-1mb.gif" alt="GIF2">
+<br>
+
+![image](https://github.com/EnzowMb/Jogo_Floresta_Perdida_EnzoMb/assets/89809584/ec4dd5ce-113d-4629-8e2d-c4000fda2698#vitrinedev)
+
 <hr>
 <h3>Requisitos do jogo cumpridos!!</h3>
 
@@ -54,6 +57,5 @@ Eles ouviram dizer que há uma lenda de uma espada perdida em um bosque estranho
 O mapa de todos os labirintos está disponível aqui: 
 [Labirintos.xlsx](https://github.com/EnzowMb/Jogo_Floresta_Perdida_EnzoMb/files/11274101/Labirintos.xlsx)
 <br>(Tambem está disponível no arquivo .zip)</sup>
-![image](https://github.com/EnzowMb/Jogo_Floresta_Perdida_EnzoMb/assets/89809584/ec4dd5ce-113d-4629-8e2d-c4000fda2698#vitrinedev)
 
 
